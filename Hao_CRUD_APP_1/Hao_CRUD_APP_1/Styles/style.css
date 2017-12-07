@@ -1,0 +1,19 @@
+.customer-list{
+
+	margin-top:40px;
+}
+
+.btn{
+	margin-top:80px;
+	margin-left: 120px;
+}
+
+#footer{
+
+
+	background-color: #666;
+	border-top: 1px solid #ccc;
+	padding: 20px;
+	text-align: center;
+	color: #eee;
+}
