@@ -98,9 +98,15 @@
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\Hao_CRUD.Context.tt">
+    <Content Include="Models\HaoEF.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Hao_CRUD.Context.cs</LastGenOutput>
+      <DependentUpon>HaoEF.edmx</DependentUpon>
+      <LastGenOutput>HaoEF.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\HaoEF.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HaoEF.edmx</DependentUpon>
+      <LastGenOutput>HaoEF.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -122,17 +128,39 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Hao_CRUD.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Hao_CRUD.Context.tt</DependentUpon>
+    <Compile Include="Models\Customer.cs">
+      <DependentUpon>HaoEF.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Hao_CRUD.Designer.cs">
+    <Compile Include="Models\HaoEF.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Hao_CRUD.edmx</DependentUpon>
+      <DependentUpon>HaoEF.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HaoEF.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HaoEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HaoEF.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HaoEF.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs">
+      <DependentUpon>HaoEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductSold.cs">
+      <DependentUpon>HaoEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Store.cs">
+      <DependentUpon>HaoEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>HaoEF.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\CustomersService.cs" />
+    <Compile Include="Service\EFDBHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -147,13 +175,15 @@
     <Content Include="Views\Customers\Customers.cshtml" />
     <Content Include="Views\Products\Products.cshtml" />
     <Content Include="Views\Sales\Sales.cshtml" />
-    <EntityDeploy Include="Models\Hao_CRUD.edmx">
+    <Content Include="Views\Customers\ModifyCustomer.cshtml" />
+    <EntityDeploy Include="Models\HaoEF.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Hao_CRUD.Designer.cs</LastGenOutput>
+      <LastGenOutput>HaoEF.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Models\Hao_CRUD.edmx.diagram">
-      <DependentUpon>Hao_CRUD.edmx</DependentUpon>
-    </None>
+    <Content Include="Models\HaoEF.edmx.diagram">
+      <DependentUpon>HaoEF.edmx</DependentUpon>
+    </Content>
+    <Content Include="Views\Customers\AddCustomer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

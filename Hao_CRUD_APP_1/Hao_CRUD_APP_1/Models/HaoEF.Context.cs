@@ -14,19 +14,25 @@ namespace Hao_CRUD_APP_1.Models
     using System.Data.Entity.Infrastructure;
     using System.Configuration;
     
-    public partial class HAO_CRUD_APP2Entities : DbContext
+    public partial class HAO_Entities : DbContext
     {
-        //public HAO_CRUD_APP2Entities()
-        //    : base("name=HAO_CRUD_APP2Entities")
+        //public HAO_Entities()
+        //    : base("name=HAO_Entities")
         //{
         //}
 
-        public HAO_CRUD_APP2Entities()
+        public HAO_Entities()
+             : base(GetConnectionString())
         {
-            //base.Database.Connection.ConnectionString = @"Server=X230-PC\SQLEXPRESS;DataBase=HAO_CRUD_APP2;Uid=sa;Pwd=root";
-            var connString = ConfigurationManager.ConnectionStrings["HAO_CRUD_APP2Entities"].ToString();
+           
+           
+        }
 
-            base.Database.Connection.ConnectionString = connString;
+        private static string GetConnectionString()
+        {
+            var connString = ConfigurationManager.ConnectionStrings["HAO_Entities"].ToString();
+
+            return connString;
         }
 
 

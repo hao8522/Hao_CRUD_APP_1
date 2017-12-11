@@ -45,3 +45,7 @@ D:\Git_Projects\Hao_CRUD_APP_1\Hao_CRUD_APP_1\Hao_CRUD_APP_1\bin\System.Web.Mvc.
 D:\Git_Projects\Hao_CRUD_APP_1\Hao_CRUD_APP_1\Hao_CRUD_APP_1\obj\Debug\Hao_CRUD_APP_1.csprojResolveAssemblyReference.cache
 D:\Git_Projects\Hao_CRUD_APP_1\Hao_CRUD_APP_1\Hao_CRUD_APP_1\obj\Debug\Hao_CRUD_APP_1.dll
 D:\Git_Projects\Hao_CRUD_APP_1\Hao_CRUD_APP_1\Hao_CRUD_APP_1\obj\Debug\Hao_CRUD_APP_1.pdb
+D:\Git_Projects\Hao_CRUD_APP_1\Hao_CRUD_APP_1\Hao_CRUD_APP_1\bin\EntityFramework.dll
+D:\Git_Projects\Hao_CRUD_APP_1\Hao_CRUD_APP_1\Hao_CRUD_APP_1\bin\EntityFramework.SqlServer.dll
+D:\Git_Projects\Hao_CRUD_APP_1\Hao_CRUD_APP_1\Hao_CRUD_APP_1\bin\EntityFramework.xml
+D:\Git_Projects\Hao_CRUD_APP_1\Hao_CRUD_APP_1\Hao_CRUD_APP_1\bin\EntityFramework.SqlServer.xml

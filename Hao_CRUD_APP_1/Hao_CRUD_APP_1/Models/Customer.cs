@@ -11,6 +11,8 @@ namespace Hao_CRUD_APP_1.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class Customer
     {
@@ -21,7 +23,13 @@ namespace Hao_CRUD_APP_1.Models
         }
     
         public int Id { get; set; }
+
+        [DisplayName("Customer Name")]
+        [Required(ErrorMessage = "{0} could not be null ")]
         public string Name { get; set; }
+
+        [DisplayName("Customer Address")]
+        [Required(ErrorMessage ="{0} could not be null")]
         public string Address { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
