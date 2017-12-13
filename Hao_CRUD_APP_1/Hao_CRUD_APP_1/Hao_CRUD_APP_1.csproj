@@ -161,6 +161,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\CustomersService.cs" />
     <Compile Include="Service\EFDBHelper.cs" />
+    <Compile Include="Service\ProductService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -184,6 +185,8 @@
       <DependentUpon>HaoEF.edmx</DependentUpon>
     </Content>
     <Content Include="Views\Customers\AddCustomer.cshtml" />
+    <Content Include="Views\Products\ModifyProduct.cshtml" />
+    <Content Include="Views\Products\AddProduct.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

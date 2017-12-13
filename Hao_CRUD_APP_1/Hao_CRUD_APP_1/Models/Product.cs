@@ -11,6 +11,8 @@ namespace Hao_CRUD_APP_1.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class Product
     {
@@ -21,7 +23,12 @@ namespace Hao_CRUD_APP_1.Models
         }
     
         public int Id { get; set; }
+        [DisplayName("Product Name")]
+        [Required(ErrorMessage ="{0} can not be null")]
         public string Name { get; set; }
+
+        [DisplayName("Product Price")]
+        [Required(ErrorMessage = "{0} can not be null")]
         public Nullable<decimal> Price { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

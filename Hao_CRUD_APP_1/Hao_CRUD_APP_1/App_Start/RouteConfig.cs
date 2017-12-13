@@ -16,7 +16,7 @@ namespace Hao_CRUD_APP_1
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Products", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Products", action = "ProductList", id = UrlParameter.Optional }
             );
         }
     }
