@@ -152,6 +152,7 @@
     <Compile Include="Models\ProductSold.cs">
       <DependentUpon>HaoEF.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Sales.cs" />
     <Compile Include="Models\Store.cs">
       <DependentUpon>HaoEF.tt</DependentUpon>
     </Compile>
@@ -162,6 +163,7 @@
     <Compile Include="Service\CustomersService.cs" />
     <Compile Include="Service\EFDBHelper.cs" />
     <Compile Include="Service\ProductService.cs" />
+    <Compile Include="Service\SalesService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
